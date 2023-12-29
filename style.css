@@ -1,0 +1,86 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300&display=swap');
+
+
+body {
+    background-color: whitesmoke;
+    height: 100vh;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.todo-app {
+    max-width: 700px;
+    background-color: grey;
+    padding: 20px 30px 50px;
+    margin: 120px auto 15px;
+    border-radius: 15px;
+}
+
+.todo-app h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+input[type="text"] {
+    width: 75%;
+    padding: 20px;
+    border: 4px solid rgb(26, 24, 24);
+    border-radius: 15px;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+.btn {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+
+
+
+ul li {
+    list-style-type: none;
+    font-size: 1.1rem;
+    padding: 10px 6px 10px 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: "☐";
+    font-size: 25px;
+    position: absolute;
+    left: -1px;
+    top: 4px;
+}
+
+#task-list {
+    padding: 0px 30px;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    color: black;
+}
+
+ul li.checked::before {
+    content: "☑";
+    color: black;
+}
+
+ul li span {
+    position: absolute;
+    top: 1.8px;
+    right: 5px;
+    color: black;
+    font-size: 2rem;
+}
